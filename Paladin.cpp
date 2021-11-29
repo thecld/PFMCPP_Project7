@@ -1,7 +1,12 @@
+#include <iostream>
 #include "Paladin.h"
 
-// Paladin::Paladin
+const std::string& Paladin::getName()
+{
+    return name;
+}
 
-// Paladin::getName
-
-// Paladin::getStats
+std::string Paladin::getStats()
+{
+    
+}

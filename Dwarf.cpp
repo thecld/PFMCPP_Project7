@@ -1,7 +1,12 @@
+#include <iostream>
 #include "Dwarf.h"
 
-//Dwarf::Dwarf
+const std::string& Dwarf::getName()
+{
+    return name;
+}
 
-//Dwarf::getName
-
-//Dwarf::getStats
+std::string Dwarf::getStats()
+{
+    
+}
