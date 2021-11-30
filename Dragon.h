@@ -4,10 +4,7 @@
 
 struct Dragon : Character
 {
-    Dragon( std::string name_, int hp, int armor_, int attackDamage_ = 80 ) :
-        Character( hp, armor_, attackDamage_ ),
-        name(name_)
-    { }
+    Dragon(const std::string name_, int hp_, int armor_ );
 
     void attack(Character& other) override;
     std::string getStats() override;
