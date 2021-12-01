@@ -110,7 +110,7 @@ void useAttackItem(Character* character, Item* item)
                 std::cout << getName() << "'s attack damage level has been boosted to " << attackDamage << std::endl;
             }*/
 
-        chDragonSlayer->boostAttackDamage(item->getBoost() * (chDragonSlayer->getAttackDamage()*item->getBoost()));
+        chDragonSlayer->boostAttackDamage( chDragonSlayer->getAttackDamage() * item->getBoost() );
     }
     else if( auto* chDragon = dynamic_cast<Dragon*>(character) )
     {

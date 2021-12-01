@@ -5,8 +5,3 @@ void AttackItem::use(Character* character)
 {
     useAttackItem(character, this);
 }
-/*to get 
-void AttackItem::reset()
-{
-    
-}*/

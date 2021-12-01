@@ -25,8 +25,15 @@ void DragonSlayer::attack(Character& other)
         //look in the Character class for how the other item types are reset after use.
 
 
-        attackItem.use(this);
-        attackItem.reset();
+
+        //if( auto* attackItem = dynamic_cast<AttackItem*>(attackItem.get()) )
+        //{
+        if (attackItem != nullptr)
+        {
+            attackItem->use(this);
+            attackItem.reset(); //can only be used once!
+        }
+        //}
 
         while( dragon->getHP() > 0 )
         {

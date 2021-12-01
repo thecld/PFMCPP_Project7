@@ -56,6 +56,8 @@ struct Character
 
     void printStats();
 
+    void restoreStats(int&, int&);
+
 protected:
     std::vector<std::unique_ptr<Item>> defensiveItems;
     std::vector<std::unique_ptr<Item>> helpfulItems;
