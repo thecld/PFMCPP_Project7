@@ -87,7 +87,7 @@ int Character::takeDamage(int damage)
 }
 
 
-#include <cassert>
+
 void Character::attackInternal(Character& other)
 {
     if( other.hitPoints <= 0 )
@@ -126,5 +126,5 @@ void Character::restoreStats(int& currentValue, int& initialValue)
             currentValue = initialValue;
 
     currentValue *= 1.1f;
-    initialValue = hitPoints;
+    initialValue = currentValue;
 }
